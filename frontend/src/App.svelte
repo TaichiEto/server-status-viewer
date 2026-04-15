@@ -1,11 +1,12 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { 
-    Users, Cpu, MemoryStick as Memory, Database, Activity, 
-    Copy, CheckCircle, HardDrive, ShieldAlert, Monitor, Terminal, 
+  import {
+    Users, Cpu, MemoryStick as Memory, Database, Activity,
+    Copy, CheckCircle, HardDrive, ShieldAlert, Monitor, Terminal,
     Settings, Zap, Clock
   } from 'lucide-svelte';
   import Chart from 'chart.js/auto';
+  import JapanMap from './JapanMap.svelte';
 
   let stats = {
     system: { hostname: "", os: "", kernel: "", uptime: 0 },
@@ -129,6 +130,11 @@
       <div class="text-xs bg-[#00ffcc] text-black px-2 py-1 font-bold">SYSTEM STATUS: NOMINAL</div>
     </div>
   </header>
+
+  <!-- Japan Seismic Monitor -->
+  <div class="mb-6">
+    <JapanMap />
+  </div>
 
   <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
     <!-- CPU & Logical Cores Section -->
