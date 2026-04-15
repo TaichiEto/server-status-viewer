@@ -1,0 +1,13 @@
+# Build artifacts
+statusnode
+dist/
+frontend/dist/
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+package-lock.json
+frontend/package-lock.json
+
+# OS specific files
+.DS_Store
