@@ -1,6 +1,7 @@
-# StatusNode (ホスト直接実行版)
+<img width="1491" height="645" alt="スクリーンショット 2026-04-15 18 27 04" src="https://github.com/user-attachments/assets/26f1453b-a16e-485e-b51b-862b30412dc8" />
+<img width="1481" height="818" alt="スクリーンショット 2026-04-15 18 27 25" src="https://github.com/user-attachments/assets/930c5e4b-1c34-4f22-96f4-c14cc748d944" />
 
-<img width="1478" height="803" alt="スクリーンショット 2026-04-15 17 17 33" src="https://github.com/user-attachments/assets/1ada132e-d7bc-4568-9051-6ca067ece2af" />
+# StatusNode (ホスト直接実行版)
 
 
 共用サーバーのリソース状況（CPU/GPU/RAM/SSH/Process）を、ホストから直接リアルタイムで監視・可視化するための軽量ツールです。Dockerを使用しないため、サーバー上の全ユーザーの活動や全てのプロセスを完全に把握できます。
