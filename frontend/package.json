@@ -19,6 +19,6 @@
   },
   "dependencies": {
     "chart.js": "^4.3.0",
-    "lucide-svelte": "^0.252.0"
+    "lucide-svelte": "^0.473.0"
   }
 }
