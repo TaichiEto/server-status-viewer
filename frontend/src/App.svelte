@@ -19,21 +19,21 @@
   let ramChartInstance;
   let copiedFeedback = "";
 
-  const showFeedback = (msg: string) => {
+  const showFeedback = (msg) => {
     copiedFeedback = msg;
     setTimeout(() => copiedFeedback = "", 2000);
   };
 
-  const copyToClipboard = (text: string) => {
+  const copyToClipboard = (text) => {
     navigator.clipboard.writeText(text);
     showFeedback(`Copied: ${text}`);
   };
 
-  const copyKillCommand = (pid: number) => {
+  const copyKillCommand = (pid) => {
     copyToClipboard(`kill -9 ${pid}`);
   };
 
-  const copyNotifyCommand = (user: string, tty: string) => {
+  const copyNotifyCommand = (user, tty) => {
     // write command requires message input in terminal
     copyToClipboard(`echo "Hello ${user}, please check your process usage." | write ${user} ${tty}`);
   };
